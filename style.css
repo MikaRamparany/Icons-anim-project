@@ -1,0 +1,156 @@
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+
+    margin: 0;
+}
+
+
+body {
+
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.container {
+
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+
+
+
+}
+
+.container i {
+
+    font-size: 30px;
+    width: 100%;
+    display: flex;
+   align-items: center;
+   justify-content: center;
+    margin: auto;
+    height: 20%;
+}
+
+.fa-twitter {
+
+    color: rgb(115, 196, 247);
+    animation: twitter 2000ms ease-in-out infinite;
+  
+}
+
+
+
+.fa-heart {
+    color: rgb(240, 130, 130);
+    animation: heart 2000ms ease-in-out infinite;
+}
+
+.fa-message {
+    color: rgb(117, 212, 117);
+    animation: green-message 2000ms ease-in-out infinite;
+}
+
+.fa-dollar-sign {
+
+    color: gray;
+    animation: dollar 2000ms ease-in-out  1000ms infinite;
+}
+
+.fa-envelope {
+    color: rgba(137, 43, 226, 0.879);
+    animation: purple-message 300ms ease-in-out infinite;
+}
+
+.container{
+    transform: translateX(-1800px); /* translate X pour apparition horisontale*/
+    animation: apparition 1.70s 2.0s ease-out forwards ;
+
+}
+
+
+@keyframes twitter {
+
+    0% {
+        transform: rotate(0deg) translateY(300px);
+    }
+
+    100% {
+
+        transform: rotate(360deg);
+    }
+    
+}
+
+
+
+@keyframes heart {
+
+    0% {
+        transform: translateY(300px);
+    }
+
+    100% {
+
+        transform: translateY(0) ;
+    }
+    
+}
+
+@keyframes green-message {
+
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+
+        transform: translateY(600px);
+    }
+    
+}
+
+
+@keyframes dollar {
+
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+
+        transform: scale(1.5);
+    }
+    
+}
+
+
+@keyframes purple-message {
+
+    0% {
+        transform: translateX(0px);
+    }
+
+    100% {
+
+        transform: translateX(5px);
+    }
+    
+}
+
+@keyframes apparition {
+    100%{
+    opacity: 1;
+    transform : none;}
+}
